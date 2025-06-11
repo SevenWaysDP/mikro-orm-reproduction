@@ -12,13 +12,13 @@ import {
 type EntityId = string;
 export class ObjectIdType extends Type<EntityId, ObjectId> {
   public convertToDatabaseValue(value: EntityId, platform: Platform): ObjectId {
-    // this.validatePlatformSupport(platform);
+    this.validatePlatformSupport(platform);
 
     return new ObjectId(value);
   }
 
   public convertToJSValue(value: ObjectId, platform: Platform): EntityId {
-    // this.validatePlatformSupport(platform);
+    this.validatePlatformSupport(platform);
     console.log("convertToJSValue", value);
 
     return value.toHexString();
