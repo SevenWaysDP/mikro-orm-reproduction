@@ -13,6 +13,7 @@
   "dependencies": {
     "@mikro-orm/core": "next",
     "@mikro-orm/sqlite": "next",
+    "@mikro-orm/mongodb": "next",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
